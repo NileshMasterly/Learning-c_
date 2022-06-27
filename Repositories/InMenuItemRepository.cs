@@ -43,9 +43,5 @@ namespace Catlog.Repositories{
          items.Remove(item);
         }
 
-        public void newAdd(Item item)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

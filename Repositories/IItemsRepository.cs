@@ -13,6 +13,5 @@ namespace Catlog.Repositories{
 
         void deletItem(Item item);
 
-        void newAdd(Item item);
     }    
 }

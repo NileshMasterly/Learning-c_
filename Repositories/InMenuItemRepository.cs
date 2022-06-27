@@ -52,6 +52,7 @@ namespace Catlog.Repositories
         }
 
 
+        // Delete All Methos Adddddd fdsafasfsaddfasfdsfds
         public void delteAllItems()
         {
            items.Clear();

@@ -42,5 +42,12 @@ namespace Catlog.Repositories{
         {   
          items.Remove(item);
         }
+
+
+        public void delteAllItems()
+        {
+           items.Clear();
+        }
+
     }
 }

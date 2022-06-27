@@ -42,6 +42,5 @@ namespace Catlog.Repositories{
         {   
          items.Remove(item);
         }
-
     }
 }

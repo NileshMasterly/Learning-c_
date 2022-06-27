@@ -23,7 +23,8 @@ namespace Catlog.Repositories{
 
         public Item GetItem(Guid id)
         {
-            return items.FirstOrDefault(item => item.Id == id);
+            var item = items.FirstOrDefault(item => item.Id == id);
+            return item??new Item{Id = Guid.NewGuid(),Name = "Test",Price =14,CreatedDate = DateTimeOffset.UtcNow};
         }
 
         public void createItem(Item item)
@@ -40,6 +41,11 @@ namespace Catlog.Repositories{
         public void deletItem(Item item)
         {   
          items.Remove(item);
+        }
+
+        public void newAdd(Item item)
+        {
+            throw new NotImplementedException();
         }
     }
 }
